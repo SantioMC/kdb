@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1e9e7a6-1c52-422a-bb81-0fa7cc2a8e41" name="Changes" comment="" />
+    <list default="true" id="e1e9e7a6-1c52-422a-bb81-0fa7cc2a8e41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/mysql/src/main/kotlin/me/santio/kdb/platform/mysql/MysqlGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/mysql/src/main/kotlin/me/santio/kdb/platform/mysql/MysqlGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/sqlite/src/main/kotlin/me/santio/kdb/platform/sqlite/SqliteGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/sqlite/src/main/kotlin/me/santio/kdb/platform/sqlite/SqliteGenerator.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,20 +51,13 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="kdb" type="f1a62948:ProjectNode" />
-                <item name="kdb" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kdb" type="f1a62948:ProjectNode" />
-                <item name="kdb" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="kdb" type="f1a62948:ProjectNode" />
-                <item name="kdb" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -83,6 +81,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -94,41 +95,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build kdb.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ProcessorAnnotationTests.can find annotations (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ProcessorAnnotationTests.can find annotations.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ProcessorAnnotationTests.executor&quot;: &quot;Profiler#1&quot;,
-    &quot;Gradle.ProcessorAnnotationTests.santio tries doing stupid things.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ProcessorAnnotationTests.test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb [:plugin:build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb [kspTestKotlin].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb [packageTests].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb [testClasses].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb:common [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb:common [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb:common [migrate].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kdb:plugin [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.test.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.UserProcessorModelKt.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/santio/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.8.1/f670fb853394b32c279637aa1a20ed43202d80a5/kotlinx-serialization-core-jvm-1.8.1-sources.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build kdb.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.ProcessorAnnotationTests.can find annotations (1).executor": "Run",
+    "Gradle.ProcessorAnnotationTests.can find annotations.executor": "Run",
+    "Gradle.ProcessorAnnotationTests.executor": "Profiler#1",
+    "Gradle.ProcessorAnnotationTests.santio tries doing stupid things.executor": "Run",
+    "Gradle.ProcessorAnnotationTests.test.executor": "Run",
+    "Gradle.kdb [:plugin:build].executor": "Run",
+    "Gradle.kdb [build].executor": "Run",
+    "Gradle.kdb [kspTestKotlin].executor": "Run",
+    "Gradle.kdb [packageTests].executor": "Run",
+    "Gradle.kdb [publishToMavenLocal].executor": "Run",
+    "Gradle.kdb [testClasses].executor": "Run",
+    "Gradle.kdb:common [build].executor": "Run",
+    "Gradle.kdb:common [clean].executor": "Run",
+    "Gradle.kdb:common [migrate].executor": "Run",
+    "Gradle.kdb:plugin [build].executor": "Run",
+    "Gradle.test.executor": "Run",
+    "Kotlin.UserProcessorModelKt.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/santio/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.8.1/f670fb853394b32c279637aa1a20ed43202d80a5/kotlinx-serialization-core-jvm-1.8.1-sources.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/platform/sqlite/src/main/resources" />
@@ -166,31 +169,7 @@
       <command value="gradle packageTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ProcessorAnnotationTests.can find annotations (1)">
-    <configuration name="ProcessorAnnotationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":common:test" />
-            <option value="--tests" />
-            <option value="&quot;me.santio.kdb.test.processor.ProcessorAnnotationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.kdb [publishToMavenLocal]">
     <configuration name="ProcessorAnnotationTests.can find annotations (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -271,6 +250,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="kdb [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="kdb [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -329,7 +330,7 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.test" />
-      <item itemvalue="Gradle.ProcessorAnnotationTests" />
+      <item itemvalue="Gradle.kdb [publishToMavenLocal]" />
       <item itemvalue="Gradle.kdb [build]" />
       <item itemvalue="Gradle.kdb [packageTests]" />
       <item itemvalue="Gradle.kdb [testClasses]" />
@@ -337,11 +338,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.kdb [publishToMavenLocal]" />
         <item itemvalue="Gradle.ProcessorAnnotationTests.can find annotations (1)" />
         <item itemvalue="Gradle.kdb [testClasses]" />
         <item itemvalue="Gradle.kdb [packageTests]" />
         <item itemvalue="Gradle.kdb [build]" />
-        <item itemvalue="Gradle.ProcessorAnnotationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +390,7 @@
       <workItem from="1751493695781" duration="1086000" />
       <workItem from="1751837340066" duration="66000" />
       <workItem from="1751837539885" duration="17000" />
-      <workItem from="1752347967287" duration="20201000" />
+      <workItem from="1752347967287" duration="23149000" />
     </task>
     <servers />
   </component>

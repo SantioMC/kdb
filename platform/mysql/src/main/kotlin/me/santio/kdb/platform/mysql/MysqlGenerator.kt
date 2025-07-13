@@ -17,6 +17,7 @@ object MysqlGenerator: SqlGenerator {
     override fun createColumnDef(column: ColumnNode, includeKeys: Boolean): String {
         val clazz = Class.forName(column.clazz)
         val sqlType = column.type ?: MysqlResolver.getSqlType(clazz) ?: error("Failed to figure out how to resolve ${clazz.simpleName}")
+        if (sqlType.contains(" ") || sqlType.contains("`")) error("The provided SQL type is not permitted: $sqlType")
 
         return buildString {
             append(literal(column.name))
