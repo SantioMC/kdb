@@ -1,0 +1,25 @@
+[versions]
+kotlin = "2.1.20"
+ksp = "2.1.20-2.0.1"
+kotlinx-json = "1.8.1"
+kotlinx-coroutines = "1.9.0"
+slf4j = "2.0.17"
+hikaricp = "6.3.0"
+jdbc-mysql = "9.3.0"
+jdbc-sqlite = "3.49.1.0"
+objensis = "3.4"
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+[libraries]
+ksp = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-json" }
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+hikaricp = { module = "com.zaxxer:HikariCP", version.ref = "hikaricp" }
+jdbc-mysql = { module = "com.mysql:mysql-connector-j", version.ref = "jdbc-mysql" }
+jdbc-sqlite = { module = "org.xerial:sqlite-jdbc", version.ref = "jdbc-sqlite" }
+objensis = { module = "org.objenesis:objenesis", version.ref = "objensis" }
